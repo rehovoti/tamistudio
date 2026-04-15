@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Tami Studio — עיצוב גבות וליפטינג ריסים באווירה חמה ומרגיעה." />
+    <meta name="theme-color" content="#fff2e6" />
+    <title>Tami Studio | תמי סטודיו</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">דלגי לתוכן</a>
+
+    <header class="site-header" data-header>
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="Tami Studio">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-name">Tami Studio</span>
+        </a>
+
+        <div class="header-actions">
+          <button class="lang-switch" type="button" data-lang-toggle aria-label="החלפת שפה">
+            <span class="lang-pill" data-lang-pill>HE</span>
+            <span class="lang-label" data-i18n="langToggle">English</span>
+          </button>
+
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-label="תפריט"
+            aria-expanded="false"
+            aria-controls="site-nav"
+            data-nav-toggle
+          >
+            <span class="nav-toggle-lines" aria-hidden="true"></span>
+          </button>
+        </div>
+
+        <nav class="site-nav" id="site-nav" data-nav>
+          <a class="nav-link" href="#services" data-i18n="nav.services">שירותים</a>
+          <a class="nav-link" href="#about" data-i18n="nav.about">קצת עליי</a>
+          <a class="nav-link" href="#gallery" data-i18n="nav.gallery">גלריה</a>
+          <a class="nav-link" href="#contact" data-i18n="nav.contact">יצירת קשר</a>
+
+          <a class="nav-cta" href="#contact" data-i18n="nav.cta">לקביעת תור</a>
+        </nav>
+      </div>
+
+      <div class="nav-backdrop" data-nav-backdrop hidden></div>
+    </header>
+
+    <main id="main">
+      <noscript>
+        <div class="container" style="padding: 16px 0; color: rgba(59, 42, 34, 0.85); font-weight: 700;">
+          JavaScript is required for the language toggle.
+        </div>
+      </noscript>
+
+      <section class="hero" id="top">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="badge" data-i18n="hero.badge">עיצוב טבעי • אווירה ביתית • תוצאה זוהרת</p>
+            <h1 class="hero-title" data-i18n="hero.title">תמי סטודיו — גבות וריסים שמרגישים כמו את</h1>
+            <p class="hero-sub" data-i18n="hero.sub">
+              עיצוב גבות וליפטינג ריסים בגישה עדינה ומדויקת, עם הרבה הקשבה. חוויה רגועה, אישית, ומחמיאה.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contact" data-i18n="hero.primary">לקביעת תור</a>
+              <a class="btn btn-ghost" href="#services" data-i18n="hero.secondary">לשירותים</a>
+            </div>
+
+            <ul class="hero-highlights" aria-label="Highlights">
+              <li class="highlight" data-i18n="hero.h1">מותאם לפנים שלך</li>
+              <li class="highlight" data-i18n="hero.h2">מראה טבעי ומואר</li>
+              <li class="highlight" data-i18n="hero.h3">זמן שלך להירגע</li>
+            </ul>
+          </div>
+
+          <div class="hero-media" aria-label="Lifestyle photography">
+            <div class="photo-stack">
+              <figure class="photo-card">
+                <img
+                  class="photo"
+                  src="eyelashes1.png"
+                  alt="לקוחה מחייכת באווירה נעימה"
+                  loading="lazy"
+                />
+                <figcaption class="photo-caption" data-i18n="hero.caption">רכות. חום. ביטחון.</figcaption>
+              </figure>
+
+              <div class="blob blob-hero" aria-hidden="true">
+                <svg viewBox="0 0 600 600" width="600" height="600" role="presentation" focusable="false">
+                  <defs>
+                    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stop-color="var(--peach)" stop-opacity="0.85" />
+                      <stop offset="1" stop-color="var(--terracotta)" stop-opacity="0.55" />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    fill="url(#g1)"
+                    d="M438.5,79.5Q520,159,515.5,266.5Q511,374,432,456Q353,538,241,531Q129,524,78.5,420Q28,316,61.5,204Q95,92,205.5,54.5Q316,17,438.5,79.5Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="container">
+          <header class="section-head">
+            <h2 class="section-title" data-i18n="services.title">השירותים</h2>
+            <p class="section-sub" data-i18n="services.sub">
+              טיפולים שמחזקים את המראה הטבעי שלך — בלי דרמה, עם הרבה דיוק.
+            </p>
+          </header>
+
+          <div class="cards">
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 20c6-1 12-1 18 0" />
+                  <path d="M5 17c3-6 11-6 14 0" />
+                  <path d="M8 14c2-3 6-3 8 0" />
+                </svg>
+              </div>
+              <h3 class="card-title" data-i18n="services.brows.title">עיצוב גבות</h3>
+              <p class="card-text" data-i18n="services.brows.text">
+                התאמה למבנה פנים, סימטריה רכה וגימור נקי — כדי שהגבות ייראו כמו גרסה הכי טובה של עצמן.
+              </p>
+              <ul class="chip-row" aria-label="Brow design details">
+                <li class="chip" data-i18n="services.brows.chip1">מיפוי עדין</li>
+                <li class="chip" data-i18n="services.brows.chip2">דיוק טבעי</li>
+                <li class="chip" data-i18n="services.brows.chip3">תוצאה מאוזנת</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 12s3-6 9-6 9 6 9 6-3 6-9 6-9-6-9-6Z" />
+                  <path d="M9.5 12a2.5 2.5 0 1 0 5 0 2.5 2.5 0 0 0-5 0Z" />
+                  <path d="M6.5 9.5c1.5 3 3.5 4.5 5.5 4.5" />
+                </svg>
+              </div>
+              <h3 class="card-title" data-i18n="services.lash.title">ליפטינג ריסים</h3>
+              <p class="card-text" data-i18n="services.lash.text">
+                הרמה טבעית שמדגישה את העיניים ומעניקה מראה רענן — בלי מסקרה, בלי מאמץ.
+              </p>
+              <ul class="chip-row" aria-label="Lash lift details">
+                <li class="chip" data-i18n="services.lash.chip1">תלתל עדין</li>
+                <li class="chip" data-i18n="services.lash.chip2">ללא כבדות</li>
+                <li class="chip" data-i18n="services.lash.chip3">מראה מואר</li>
+              </ul>
+            </article>
+
+            <article class="card card-soft">
+              <h3 class="card-title" data-i18n="services.vibe.title">חוויה בסטודיו</h3>
+              <p class="card-text" data-i18n="services.vibe.text">
+                אווירה רגועה, מוזיקה שקטה, ורגע שהוא רק שלך. אני עובדת בקצב נעים, עם הקשבה והסבר בכל שלב.
+              </p>
+              <div class="vibe">
+                <div class="vibe-item">
+                  <span class="vibe-dot" aria-hidden="true"></span>
+                  <span data-i18n="services.vibe.item1">היגיינה וניקיון מוקפדים</span>
+                </div>
+                <div class="vibe-item">
+                  <span class="vibe-dot" aria-hidden="true"></span>
+                  <span data-i18n="services.vibe.item2">ייעוץ קצר לפני טיפול</span>
+                </div>
+                <div class="vibe-item">
+                  <span class="vibe-dot" aria-hidden="true"></span>
+                  <span data-i18n="services.vibe.item3">טאץ׳ מחמיא, לא מוגזם</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="about">
+        <div class="container about-grid">
+          <div class="about-media">
+            <div class="blob blob-about" aria-hidden="true">
+              <svg viewBox="0 0 600 600" width="600" height="600" role="presentation" focusable="false">
+                <defs>
+                  <linearGradient id="g2" x1="1" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="var(--cream)" stop-opacity="0.9" />
+                    <stop offset="1" stop-color="var(--peach)" stop-opacity="0.6" />
+                  </linearGradient>
+                </defs>
+                <path
+                  fill="url(#g2)"
+                  d="M456,110Q532,220,474,340Q416,460,298.5,506Q181,552,103.5,448.5Q26,345,54,234Q82,123,196.5,73.5Q311,24,456,110Z"
+                />
+              </svg>
+            </div>
+
+            <figure class="photo-card">
+              <img
+                class="photo"
+                src="cert.jpg"
+                alt="אווירה נעימה בסטודיו"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+
+          <div class="about-copy">
+            <h2 class="section-title" data-i18n="about.title">קצת על Tami Studio</h2>
+            <p class="section-sub" data-i18n="about.sub">
+              אני מאמינה ביופי שקט — כזה שמרגישים, לא רק רואים. המטרה שלי היא שתרגישי נינוחה, מטופלת, ויפה בדיוק כמו שאת.
+            </p>
+
+            <div class="quote">
+              <p class="quote-text" data-i18n="about.quote">"אצל תמי זה לא רק טיפול — זה רגע של נשימה."</p>
+              <p class="quote-by" data-i18n="about.quoteBy">— לקוחה</p>
+            </div>
+
+            <div class="pill-row" aria-label="Studio qualities">
+              <span class="pill" data-i18n="about.pill1">גישה אישית</span>
+              <span class="pill" data-i18n="about.pill2">עדינות ודיוק</span>
+              <span class="pill" data-i18n="about.pill3">תוצאה טבעית</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="gallery">
+        <div class="container">
+          <header class="section-head">
+            <h2 class="section-title" data-i18n="gallery.title">גלריה</h2>
+            <p class="section-sub" data-i18n="gallery.sub">
+              כמה רגעים מהסטודיו — אווירה חמה, תוצאות שמחמיאות, ולקוחות מרוצות.
+            </p>
+          </header>
+
+          <div class="gallery">
+            <figure class="gallery-item">
+              <img
+                src="gl12.jpg"
+                alt="פינה נעימה בסטודיו"
+                loading="lazy"
+              />
+            </figure>
+            <figure class="gallery-item">
+              <img
+                src="gl14.jpg"
+                alt="לקוחה רגועה ומחייכת"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-contact" id="contact">
+        <div class="container contact-grid">
+          <div class="contact-card">
+            <h2 class="section-title" data-i18n="contact.title">בואי נקבע</h2>
+            <p class="section-sub" data-i18n="contact.sub">
+              שלחי הודעה קצרה ואחזור אלייך עם זמינות. אפשר גם לציין מה תרצי: גבות / ליפטינג ריסים.
+            </p>
+
+            <div class="contact-actions">
+              <a
+                class="btn btn-primary"
+                href="https://wa.me/972552273040"
+                target="_blank"
+                rel="noreferrer"
+                data-i18n="contact.whatsapp"
+              >
+                וואטסאפ
+              </a>
+              <a class="btn btn-ghost" href="tel:+972552273040" data-i18n="contact.call">שיחה</a>
+            </div>
+
+            <div class="contact-meta" aria-label="Contact details">
+              <div class="meta-row">
+                <span class="meta-label" data-i18n="contact.hoursLabel">שעות</span>
+                <span class="meta-value" data-i18n="contact.hoursValue">בתיאום מראש</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label" data-i18n="contact.locationLabel">מיקום</span>
+                <span class="meta-value" data-i18n="contact.locationValue">מרטון 3 רחובות</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="contact-aside" aria-label="Soft background">
+            <div class="soft-panel">
+              <h3 class="soft-title" data-i18n="contact.asideTitle">מה מביאים?</h3>
+              <ul class="soft-list">
+                <li data-i18n="contact.aside1">רק את — בלי לחץ.</li>
+                <li data-i18n="contact.aside2">אפשר להגיע בלי איפור בעיניים.</li>
+                <li data-i18n="contact.aside3">אם יש רגישות/אלרגיה — ספרי לי מראש.</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-brand">Tami Studio</p>
+        <p class="footer-note" data-i18n="footer.note">© <span data-year></span> כל הזכויות שמורות</p>
+      </div>
+    </footer>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
