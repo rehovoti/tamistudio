@@ -1,0 +1,39 @@
+# Git
+.git/
+.gitignore
+
+# Documentation
+README.md
+INSTALL.md
+
+# Docker files
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node (if you add it later)
+node_modules/
+npm-debug.log
+
+# Python (for future FastAPI integration)
+__pycache__/
+*.py[cod]
+*.so
+.Python
+env/
+venv/
+.env
+
+# Logs
+*.log
