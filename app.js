@@ -56,7 +56,6 @@ const translations = {
     },
     gallery: {
       title: "גלריה",
-      sub: "כמה רגעים מהסטודיו — אווירה חמה, תוצאות שמחמיאות, ולקוחות מרוצות.",
     },
     contact: {
       title: "בואי נקבע",
@@ -133,7 +132,6 @@ const translations = {
     },
     gallery: {
       title: "Gallery",
-      sub: "Some moments from the studio — warm atmosphere, flattering results, and happy clients.",
     },
     contact: {
       title: "Let’s book",
