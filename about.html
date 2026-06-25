@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="About Tami Studio" />
+    <meta name="theme-color" content="#fff2e6" />
+    <title>About | Tami Studio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Frank+Ruhl+Libre:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">דלגי לתוכן</a>
+
+    <header class="site-header" data-header>
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Tami Studio">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-name">Tami Studio</span>
+        </a>
+
+        <div class="header-actions">
+          <button class="lang-switch" type="button" data-lang-toggle aria-label="החלפת שפה">
+            <span class="lang-pill" data-lang-pill>HE</span>
+            <span class="lang-label" data-i18n="langToggle">English</span>
+          </button>
+
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-label="תפריט"
+            aria-expanded="false"
+            aria-controls="site-nav"
+            data-nav-toggle
+          >
+            <span class="nav-toggle-lines" aria-hidden="true"></span>
+          </button>
+        </div>
+
+        <nav class="site-nav" id="site-nav" data-nav>
+          <a class="nav-link" href="index.html" data-i18n="nav.home">דף הבית</a>
+          <a class="nav-link" href="services.html" data-i18n="nav.services">שירותים</a>
+          <a class="nav-link" href="about.html" data-i18n="nav.about">קצת עליי</a>
+          <a class="nav-link" href="gallery.html" data-i18n="nav.gallery">גלריה</a>
+          <a class="nav-link" href="contacts.html" data-i18n="nav.contact">יצירת קשר</a>
+          <a class="nav-cta" href="contacts.html" data-i18n="nav.cta">לקביעת תור</a>
+        </nav>
+      </div>
+
+      <div class="nav-backdrop" data-nav-backdrop hidden></div>
+    </header>
+
+    <main id="main">
+      <section class="section section-alt" id="about">
+        <div class="container about-grid">
+          <div class="about-media">
+            <figure class="photo-card">
+              <img
+                class="photo"
+                src="cert.jpg"
+                alt="אווירה נעימה בסטודיו"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+
+          <div class="about-copy">
+            <h1 class="section-title" data-i18n="about.title">קצת על Tami Studio</h1>
+            <p class="section-sub" data-i18n="about.sub">
+              אני מאמינה ביופי שקט — כזה שמרגישים, לא רק רואים. המטרה שלי היא שתרגישי נינוחה, מטופלת, ויפה בדיוק כמו שאת.
+            </p>
+
+            <div class="quote">
+              <p class="quote-text" data-i18n="about.quote">"אצל תמי זה לא רק טיפול — זה רגע של נשימה."</p>
+              <p class="quote-by" data-i18n="about.quoteBy">— לקוחה</p>
+            </div>
+
+            <div class="pill-row" aria-label="Studio qualities">
+              <span class="pill" data-i18n="about.pill1">גישה אישית</span>
+              <span class="pill" data-i18n="about.pill2">עדינות ודיוק</span>
+              <span class="pill" data-i18n="about.pill3">תוצאה טבעית</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-brand">Tami Studio</p>
+        <p class="footer-note" data-i18n="footer.note">© <span data-year></span> כל הזכויות שמורות</p>
+      </div>
+    </footer>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>

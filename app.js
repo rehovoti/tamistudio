@@ -3,6 +3,7 @@ const translations = {
     skip: "דלגי לתוכן",
     langToggle: "English",
     nav: {
+      home: "דף הבית",
       services: "שירותים",
       about: "קצת עליי",
       gallery: "גלריה",
@@ -79,6 +80,7 @@ const translations = {
     skip: "Skip to content",
     langToggle: "עברית",
     nav: {
+      home: "Home",
       services: "Services",
       about: "About",
       gallery: "Gallery",
@@ -255,11 +257,34 @@ function initYear() {
   });
 }
 
+function initActiveNav() {
+  const navLinks = document.querySelectorAll("[data-nav] .nav-link[href]");
+  if (!navLinks.length) return;
+
+  const currentPath = window.location.pathname.split("/").pop() || "index.html";
+
+  navLinks.forEach((link) => {
+    const href = link.getAttribute("href");
+    if (!href || href.startsWith("#") || href.startsWith("http")) return;
+
+    const targetPath = href.split("/").pop();
+    const isCurrent = targetPath === currentPath;
+
+    link.classList.toggle("is-active", isCurrent);
+    if (isCurrent) {
+      link.setAttribute("aria-current", "page");
+    } else {
+      link.removeAttribute("aria-current");
+    }
+  });
+}
+
 function init() {
   initYear();
   initNav();
   initLangToggle();
   setLocale(getInitialLocale());
+  initActiveNav();
   closeNav();
 }
 

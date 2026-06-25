@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Tami Studio Services" />
+    <meta name="theme-color" content="#fff2e6" />
+    <title>Services | Tami Studio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Frank+Ruhl+Libre:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">דלגי לתוכן</a>
+
+    <header class="site-header" data-header>
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Tami Studio">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-name">Tami Studio</span>
+        </a>
+
+        <div class="header-actions">
+          <button class="lang-switch" type="button" data-lang-toggle aria-label="החלפת שפה">
+            <span class="lang-pill" data-lang-pill>HE</span>
+            <span class="lang-label" data-i18n="langToggle">English</span>
+          </button>
+
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-label="תפריט"
+            aria-expanded="false"
+            aria-controls="site-nav"
+            data-nav-toggle
+          >
+            <span class="nav-toggle-lines" aria-hidden="true"></span>
+          </button>
+        </div>
+
+        <nav class="site-nav" id="site-nav" data-nav>
+          <a class="nav-link" href="index.html" data-i18n="nav.home">דף הבית</a>
+          <a class="nav-link" href="services.html" data-i18n="nav.services">שירותים</a>
+          <a class="nav-link" href="about.html" data-i18n="nav.about">קצת עליי</a>
+          <a class="nav-link" href="gallery.html" data-i18n="nav.gallery">גלריה</a>
+          <a class="nav-link" href="contacts.html" data-i18n="nav.contact">יצירת קשר</a>
+          <a class="nav-cta" href="contacts.html" data-i18n="nav.cta">לקביעת תור</a>
+        </nav>
+      </div>
+
+      <div class="nav-backdrop" data-nav-backdrop hidden></div>
+    </header>
+
+    <main id="main">
+      <section class="section" id="services">
+        <div class="container">
+          <header class="section-head">
+            <h1 class="section-title" data-i18n="services.title">השירותים</h1>
+            <p class="section-sub" data-i18n="services.sub">
+              טיפולים שמחזקים את המראה הטבעי שלך — בלי דרמה, עם הרבה דיוק.
+            </p>
+          </header>
+
+          <div class="cards">
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 20c6-1 12-1 18 0" />
+                  <path d="M5 17c3-6 11-6 14 0" />
+                  <path d="M8 14c2-3 6-3 8 0" />
+                </svg>
+              </div>
+              <h3 class="card-title" data-i18n="services.brows.title">עיצוב גבות</h3>
+              <p class="card-text" data-i18n="services.brows.text">
+                התאמה למבנה פנים, סימטריה רכה וגימור נקי — כדי שהגבות ייראו כמו גרסה הכי טובה של עצמן.
+              </p>
+              <ul class="chip-row" aria-label="Brow design details">
+                <li class="chip" data-i18n="services.brows.chip1">מיפוי עדין</li>
+                <li class="chip" data-i18n="services.brows.chip2">דיוק טבעי</li>
+                <li class="chip" data-i18n="services.brows.chip3">תוצאה מאוזנת</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <div class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 12s3-6 9-6 9 6 9 6-3 6-9 6-9-6-9-6Z" />
+                  <path d="M9.5 12a2.5 2.5 0 1 0 5 0 2.5 2.5 0 0 0-5 0Z" />
+                  <path d="M6.5 9.5c1.5 3 3.5 4.5 5.5 4.5" />
+                </svg>
+              </div>
+              <h3 class="card-title" data-i18n="services.lash.title">ליפטינג ריסים</h3>
+              <p class="card-text" data-i18n="services.lash.text">
+                הרמה טבעית שמדגישה את העיניים ומעניקה מראה רענן — בלי מסקרה, בלי מאמץ.
+              </p>
+              <ul class="chip-row" aria-label="Lash lift details">
+                <li class="chip" data-i18n="services.lash.chip1">תלתל עדין</li>
+                <li class="chip" data-i18n="services.lash.chip2">ללא כבדות</li>
+                <li class="chip" data-i18n="services.lash.chip3">מראה מואר</li>
+              </ul>
+            </article>
+
+            <article class="card card-soft">
+              <h3 class="card-title" data-i18n="services.vibe.title">חוויה בסטודיו</h3>
+              <p class="card-text" data-i18n="services.vibe.text">
+                אווירה רגועה, מוזיקה שקטה, ורגע שהוא רק שלך. אני עובדת בקצב נעים, עם הקשבה והסבר בכל שלב.
+              </p>
+              <div class="vibe">
+                <div class="vibe-item">
+                  <span class="vibe-dot" aria-hidden="true"></span>
+                  <span data-i18n="services.vibe.item1">היגיינה וניקיון מוקפדים</span>
+                </div>
+                <div class="vibe-item">
+                  <span class="vibe-dot" aria-hidden="true"></span>
+                  <span data-i18n="services.vibe.item2">ייעוץ קצר לפני טיפול</span>
+                </div>
+                <div class="vibe-item">
+                  <span class="vibe-dot" aria-hidden="true"></span>
+                  <span data-i18n="services.vibe.item3">טאץ׳ מחמיא, לא מוגזם</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="footer-brand">Tami Studio</p>
+        <p class="footer-note" data-i18n="footer.note">© <span data-year></span> כל הזכויות שמורות</p>
+      </div>
+    </footer>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>

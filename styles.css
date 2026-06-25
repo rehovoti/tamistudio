@@ -216,6 +216,13 @@ a {
   text-align: center;
 }
 
+.nav-link.is-active {
+  border-color: var(--line-deep);
+  background: color-mix(in srgb, var(--accent-soft) 44%, var(--paper));
+  color: var(--ink);
+  font-weight: 700;
+}
+
 .nav-link:hover,
 .nav-cta:hover {
   border-color: var(--line);
@@ -610,6 +617,11 @@ main::after {
     border: none;
     box-shadow: none;
     background: transparent;
+  }
+
+  .nav-link.is-active {
+    border-color: var(--line);
+    background: rgba(221, 200, 177, 0.28);
   }
 
   .hero-grid {
